@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'doctor_availability'
+
+require 'pry'
+Pry.start
