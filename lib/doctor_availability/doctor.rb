@@ -8,6 +8,8 @@ module DoctorAvailability
     end
 
     def available_on?(weekday_name)
+      raise(NoSuchDayError, weekday_name) unless WEEKDAYS.include?(weekday_name)
+
       @days_available[weekday_name]
     end
   end

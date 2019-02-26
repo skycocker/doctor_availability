@@ -1,4 +1,5 @@
 require 'doctor_availability/version'
+require 'doctor_availability/errors'
 require 'active_support/all'
 require 'csv'
 require 'doctor_availability/weekdays'
