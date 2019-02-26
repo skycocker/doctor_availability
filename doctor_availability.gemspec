@@ -1,4 +1,3 @@
-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'doctor_availability/version'
@@ -26,4 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake',    '~> 10.0'
   spec.add_development_dependency 'rspec',   '~> 3.0'
   spec.add_development_dependency 'pry'
+
+  spec.add_dependency 'csv'
+  spec.add_dependency 'activesupport'
 end
